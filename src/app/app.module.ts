@@ -9,11 +9,14 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgHttpLoaderModule } from 'ng-http-loader/ng-http-loader.module';
 import { EagerComponentComponent } from './eager-component/eager-component.component';
+import { MaterialComponentModule } from './material-component/material-component.module';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EagerComponentComponent
+    EagerComponentComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import { EagerComponentComponent } from './eager-component/eager-component.compo
     SharedModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
-    NgHttpLoaderModule],
+    NgHttpLoaderModule,
+    MaterialComponentModule],
   providers: [],
   bootstrap: [AppComponent],
   exports: [RouterModule]

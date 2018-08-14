@@ -1,5 +1,5 @@
-import { Routes } from "@angular/router";
-import { EagerComponentComponent } from "./eager-component/eager-component.component";
+import { Routes } from '@angular/router';
+import { EagerComponentComponent } from './eager-component/eager-component.component';
 
 export const routes: Routes = [  
     { path: 'login', loadChildren: './login/login.module#LoginModule' },

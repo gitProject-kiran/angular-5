@@ -1,7 +1,7 @@
-import { Routes } from "@angular/router";
-import { LoginPageComponent } from "./login-page/login-page.component";
-import { SignupPageComponent } from "./signup-page/signup-page.component";
-import { ForgotPasswordPageComponent } from "./forgot-password-page/forgot-password-page.component";
+import { Routes } from '@angular/router';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { SignupPageComponent } from './signup-page/signup-page.component';
+import { ForgotPasswordPageComponent } from './forgot-password-page/forgot-password-page.component';
 
 export const routes: Routes = [
     { path: 'signin', component: LoginPageComponent },

@@ -4,13 +4,15 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { ForgotPasswordPageComponent } from './forgot-password-page/forgot-password-page.component';
 import { Routes, RouterModule } from '@angular/router';
+import { FormsModule }   from '@angular/forms';
 import { routes } from './login.routing';
 import { ComponentCommunicationService } from './_services/component-communication.service';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    FormsModule
   ],
   providers:[
     ComponentCommunicationService
